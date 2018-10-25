@@ -18,6 +18,7 @@ class InfoForm extends Component {
 
     this.handlePhoneChange = this.handlePhoneChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleHome = this.handleHome.bind(this);
     this.handleRadioChange = this.handleRadioChange.bind(this);
     this.handleProgressBar = this.handleProgressBar.bind(this);
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -61,7 +62,7 @@ class InfoForm extends Component {
     !this.state.salary && this.handleProgressBar();
   }
 
-  handleProgressBar(event) {
+  handleProgressBar() {
     // console.log('working' +this.state.progress)
     this.setState({
       progress: this.state.progress + 25
@@ -74,6 +75,17 @@ class InfoForm extends Component {
       form: false
     })
     event.preventDefault();
+  }
+
+  handleHome() {
+    this.setState({
+      name: "",
+      email: "",
+      phone: "",
+      salary: "",
+      progress: 0,
+      form: true
+    })
   }
 
   render() {
@@ -186,6 +198,10 @@ class InfoForm extends Component {
           Phone: {this.state.phone}
           <br />
           Salary: {this.state.salary}
+          <br />
+          <br />
+          <button onClick={this.handleHome}>Return Home</button>
+
         </div>)
     }
   }
