@@ -31,6 +31,23 @@ background-color: lightgrey;
 
 }
 
+.progress-bar{
+  background-color: lightgrey;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top:40px; 
+}
+.progress-bar-fill{
+  background-color: #7AC456;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top:40px; 
+  transition: width .4s ease-in-out;
+}
 
 @keyframes App-logo-spin {
   from {
