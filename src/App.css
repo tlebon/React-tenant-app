@@ -28,7 +28,6 @@ input{
 border-radius: 10px;
 font-size:20px;
 background-color: lightgrey;
-
 }
 
 .progress-bar{
@@ -47,6 +46,10 @@ background-color: lightgrey;
   margin: 0 auto;
   margin-top:40px; 
   transition: width .4s ease-in-out;
+}
+
+.success{
+padding-top: 50px;
 }
 
 @keyframes App-logo-spin {
